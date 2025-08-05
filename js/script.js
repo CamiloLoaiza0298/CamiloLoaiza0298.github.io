@@ -10,7 +10,7 @@ function showScroll(){
     for (var i = 0; i < animated.length; i++){
         let heigthAn = animated[i].offsetTop;
         console.log('heigth:' + heigthAn);
-        if(heigthAn - 600 < scrollTop){
+        if(heigthAn - 1000 < scrollTop){
             animated[i].style.opacity = 1;
         }
     }

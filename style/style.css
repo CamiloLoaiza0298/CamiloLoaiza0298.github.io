@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00b98b;
+    background-color: #e36221;
     position: sticky;
     top: 0;
     width: 100%;
@@ -38,11 +38,11 @@
 }
 
 .menu li a:hover:not(.active) {
-    background-color: #00e0a8;
+    background-color: #f49c21;
 }
 
 .active {
-    background-color: #006b50;
+    background-color: #b9480f;
 }
 
 
@@ -87,11 +87,11 @@
     }
 
     .menu li a:hover:not(.active) {
-        background-color: hsla(165, 100%, 44%, 0.8);
+        background-color: hsla(35, 91%, 54%, 0.8);
     }
 
     .active {
-        background-color: hsla(165, 100%, 21%, 0.8);
+        background-color: hsla(20, 85%, 39%, 0.8);
     }
 }
 
@@ -131,49 +131,6 @@ main{
     transition: all 0.5s;
 }
 
-header{
-    background-color: #006b50;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.profile{
-    height:200px;   
-    margin-right: 20px;   
-}
-
-.headerText{
-    margin-right: 50px;
-}
-
-.headerText h1{
-    margin-bottom: 0.1em;
-    margin-top: 0;
-}
-
-.headerText h3{
-    margin: 0;
-    margin-bottom: 1em;
-}
-
-.headerText p{
-    margin-top: 0;
-}
-
-.contDet{
-    display: flex;
-    align-items: center;
-    margin: 0.5em;
-}
-
-.contDet img{
-    height: 1em;
-    margin-right: 5px;
-}
-
 .info{
     padding: 2em;
 }
@@ -182,36 +139,8 @@ header{
     margin-bottom: 0;
 }
 
-#download {
-  display: inline-block;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #4CAF50, #2E7D32);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-#download::after {
-  position: absolute;
-  right: 20px;
-  opacity: 0;
-  transition: right 0.3s ease, opacity 0.3s ease;
-}
-
-#download:hover {
-  background: linear-gradient(135deg, #66BB6A, #388E3C);
-  transform: scale(1.05);
-}
-
-#download:hover::after {
-  right: 10px;
-  opacity: 1;
+.container{
+    display: flex;
 }
 
 .styled-list {
@@ -307,54 +236,54 @@ td{
 
 /*form*/
 
-    .contact-form {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 500px;
-    }
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
 
-    .form-group {
-      margin-bottom: 1rem;
-    }
+.form-group {
+    margin-bottom: 1rem;
+}
 
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
 
-    .form-group input,
-    .form-group textarea {
-      width: 90%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-      resize: vertical;
-    }
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+}
 
-    .form-group textarea {
-      height: 120px;
-    }
+.form-group textarea {
+    height: 120px;
+}
 
-    .form-group button {
-      width: 100%;
-      padding: 0.75rem;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.form-group button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    .form-group button:hover {
-      background-color: #0056b3;
-    }
+.form-group button:hover {
+    background-color: #0056b3;
+}
 
 
 /*Slideshow*/
