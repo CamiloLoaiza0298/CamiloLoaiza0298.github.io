@@ -5,16 +5,17 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #e36221;
     position: sticky;
     top: 0;
     width: 100%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.486);
+    padding: 0;
 }
 
 .logo {
-    height:45px;
+    height:60px;
+    margin: 0.3%;
     margin-left: 1%;
 }
 
@@ -27,6 +28,7 @@
 #navbar form{
     float: left;
     margin-right: 1em;
+    align-content: center;
 }
 
 .search{
@@ -39,7 +41,6 @@
   float: left;
   padding: 6px;
   border: none;
-  margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
   margin-right: 0;
@@ -48,7 +49,6 @@
 #navbar button {
   float: left;
   padding: 5px;
-  margin-top: 8px;
   background: #ddd;
   border: none;
   cursor: pointer;
@@ -77,6 +77,8 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    align-content: center;
+    height: 59%;
 }
 
 .menu li a:hover:not(.active) {
@@ -92,12 +94,16 @@
 @media (max-width: 700px) {
 
     #navbar{
-        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.486);
         height:max-content;
     }
 
     #navbar input[type=text] {
         width: 120px;
+        margin-top: 8px;
+    }
+
+    #navbar button{
+        margin-top: 8px;
     }
 
     .menu-toggle {
@@ -296,7 +302,7 @@ video{
 @media (max-width: 700px){
     #page{
         width: 100%;
-        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.486);
+        margin: 0;
     }
 
     h1{
@@ -509,10 +515,6 @@ td{
 }
 
 @media (max-width: 700px){
-    .slideshow{
-        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
-    }
-
     .slideshow, .slides img{
         width: 100vw;
     }
@@ -520,4 +522,66 @@ td{
     .slides{
         width: 300vw;
     }
+}
+
+/* Footer */
+
+footer{
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+footer p{
+    font-size: medium;
+}
+
+.footer-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #e74c3c;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem 0;
+}
+
+.back-to-top {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
 }
