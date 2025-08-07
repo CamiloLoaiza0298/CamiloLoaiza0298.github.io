@@ -12,14 +12,20 @@
 <body>
     <nav id="navbar">
         <img src="images/logo.png" class="logo">
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="menu" id="menu">
-            <li><a class="active" href="#page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="politics.html">Politics</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav">
+             <form action="index.html"> <!--This doesn't work since we still don't know how to use PHP-->
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="images/search-search.png" class="search"></button>
+            </form>    
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="menu" id="menu">
+                <li><a class="active" href="#page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
