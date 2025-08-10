@@ -16,3 +16,12 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
       alert('Please fill in all the fields before submitting.');
     }
   });
+
+function openLightbox(img) {
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
