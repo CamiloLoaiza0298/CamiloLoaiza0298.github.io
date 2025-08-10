@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Zona Torrida Eventos S.A.</title>
+    <title>Contact - Zona Torrida Eventos S.A.</title>
     <link rel="icon" type="image/png" href="images/icon.ico">
     <script src="js/script.js"></script>
 </head>
 
 <body>
     <nav id="navbar">
-        <img src="images/logo.png" class="logo">
+        <a href="index.html" class="logolink"><img src="images/logo.png" class="logo"></a>
         <div class="nav">
              <form action="index.html"> <!--This doesn't work since we still don't know how to use PHP-->
                 <input type="text" placeholder="Search...">
@@ -55,8 +55,44 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <div class="radios">
+                                <label><input type="radio" name="title" value="mr">Mr.</label>
+                                <label><input type="radio" name="title" value="mrs">Mrs.</label>
+                                <label><input type="radio" name="title" value="other">Other</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Interested in our services? Select all that apply:</label>
+                            <div class="radios">
+                                <label><input type="checkbox" name="interest" value="weddings">Weddings</label>
+                                <label><input type="checkbox" name="interest" value="corporate">Corporate Events</label>
+                                <label><input type="checkbox" name="interest" value="festivals">Festivals</label>
+                                <label><input type="checkbox" name="interest" value="other">Others</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" list="subject-options" placeholder="Select a subject">
+                            <datalist id="subject-options">
+                                <option value="Event Inquiry">
+                                <option value="Partnership Proposal">
+                                <option value="Complaint">
+                                <option value="General Question">
+                                <option value="Booking Request">
+                            </datalist>
                         </div>
 
                         <div class="form-group">

@@ -13,10 +13,13 @@
     padding: 0;
 }
 
+#navbar .logolink{
+    margin: 0.1%;
+    margin-left: 1%;
+}
+
 .logo {
     height:60px;
-    margin: 0.3%;
-    margin-left: 1%;
 }
 
 .nav{
@@ -173,6 +176,12 @@ body{
     background-color: rgb(236, 139, 28);
 }
 
+.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 550;
+  font-style: normal;
+}
+
 p{
     font-size: 20px;
 }
@@ -306,7 +315,7 @@ video{
     }
 
     h1{
-        font-size: 2.15em;
+        font-size: 3em;
     }
 
     h2{
@@ -462,6 +471,13 @@ td{
     border-radius: 8px;
     font-size: 1rem;
     resize: vertical;
+}
+
+.radios{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    left: 0;
 }
 
 .form-group textarea {
