@@ -1,5 +1,3 @@
-
-
 //Menu
 function toggleMenu() {
     const menu = document.getElementById('menu');

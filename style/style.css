@@ -106,7 +106,7 @@ body{
     background-color: rgb(236, 139, 28);
 }
 
-.birthstone-regular {
+.birthstone-regular {  /*Custom font from Google fonts*/
   font-family: "Birthstone", cursive;
   font-weight: 550;
   font-style: normal;
@@ -132,12 +132,13 @@ h2{
     font-weight: normal;
 }
 
-.small{
+.small{ /*For an specific sentence in the home page*/
     width: 60%;
     text-align: center;
 }
 
-.btn {
+/*Styling the "Learn more about us" button*/
+.btn { 
     margin-top: 2em;
     background-color: #ec8b1c;
     color: white;
@@ -158,7 +159,7 @@ h2{
   transform: scale(1.1);
 }
 
-
+/*Giving more space with the hr tag*/
 hr{
     margin-top: 3em;
     margin-bottom: 3em;
@@ -169,10 +170,7 @@ video{
     width: 100%;
 }
 
-.info{
-    padding: 2em;
-}
-
+/*The space to show the info*/
 #page{
     width: 95%;
     background-color: #ffffff;
@@ -180,7 +178,12 @@ video{
     margin-bottom: 50px;
 }
 
-.service{
+.info{ /*Where the actual information goes*/
+    padding: 2em;
+}
+
+/*Show services in the homepage*/
+.service{ 
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -220,6 +223,7 @@ video{
     margin-top: 0.5em;
 }
 
+/*Info next to other info. Used in the "about" page*/
 aside {
   width: 15%;
   padding: 1%;
@@ -238,7 +242,7 @@ aside p{
     margin: 0;
 }
 
-.sentence{
+.sentence{ /*Quote used in the aside*/
     float: right;
     text-align: right;
     font-size: medium;
@@ -355,6 +359,8 @@ summary {
     margin-right: 0.5em;
 }
 
+
+/*Making a list styled with the colors and web general theme*/
 .styled-list {
     list-style: none;
 }
@@ -382,23 +388,7 @@ h4{
     margin-left: 40px;
 }
 
-
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: #e0e0e0;
-    color: #616161;
-}
-
-table{
-    width: 100%;
-}
-
-td{
-    justify-content: center;
-}
-
-/*form*/
+/*Contact form*/
 
 .contact-form {
     background: rgb(238, 238, 238);
@@ -486,10 +476,19 @@ td{
     100% { transform: translateX(0); }
 }
 
+/*Banner instead of slideshow for other pages*/
+.banner img{
+    width: 100%;
+}
+
 /* Footer */
 
 footer{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e0e0e0;
+    color: #616161;
     margin-top: 30px;
 }
 
@@ -547,6 +546,8 @@ footer p{
     color: white;
     font-size: 0.9rem;
 }
+
+/*Responsiveness for phones and tablets*/
 
 @media (max-width: 768px){
 
