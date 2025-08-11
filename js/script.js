@@ -1,3 +1,6 @@
+
+
+//Menu
 function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('show');
@@ -5,6 +8,17 @@ function toggleMenu() {
 
 let animated = document.querySelectorAll(".animated");
 
+//Lightbox
+function openLightbox(img) {
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+//Contact form
 document.querySelector('.contact-form').addEventListener('submit', function (e) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -16,12 +30,3 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
       alert('Please fill in all the fields before submitting.');
     }
   });
-
-function openLightbox(img) {
-  document.getElementById("lightbox-img").src = img.src;
-  document.getElementById("lightbox").style.display = "flex";
-}
-
-function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
-}
